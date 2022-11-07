@@ -1,5 +1,11 @@
+/*body {*/
+/*    background: linear-gradient(90deg, #34c42e 0%, #68e779 100%);*/
+/*}*/
+
+
 .container {
     width: 1140px;
     margin: 50px auto;
+    background: white;
 
 }
