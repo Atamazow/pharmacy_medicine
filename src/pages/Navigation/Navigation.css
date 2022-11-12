@@ -1,20 +1,26 @@
-ul {
+.navigation {
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 50px;
-
 }
 
-ul li {
+.navigation li {
     margin-left: 20px;
     font-size: 20px;
+    padding: 15px;
     cursor: pointer;
     transition: .3s;
+    border-radius: 25px;
 }
 
-ul li:hover {
-    color: #0c7e34;
+.navigation li:hover {
     transition: .3s;
+    background-color: #13cbbb;
+    color: white;
+}
 
+.active {
+    background-color: #13cbbb;
+    color: white;
 }

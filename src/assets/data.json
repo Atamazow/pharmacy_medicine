@@ -1,79 +1,98 @@
 [
   {
     "id": 0,
-    "name": "",
-    "imageUrl": "",
-    "price": 0,
-    "category": 1
+    "name": "Омепразол",
+    "imageUrl": "https://avatars.mds.yandex.net/get-mpic/4580278/img_id9062277251401801626.jpeg/orig",
+    "price": "50",
+    "category": 1,
+    "Manufacturer": ""
   },
   {
     "id": 1,
-    "name": "",
-    "imageUrl": "",
-    "price": 0,
-    "category": 1
+    "name": "Карвалол",
+    "imageUrl": "https://pharmstd.ru/upload/300spravo4nik_lekarstva/form_189.jpg",
+    "price": "150",
+    "category": 1,
+    "Manufacturer": ""
   },
   {
     "id": 2,
-    "name": "",
-    "imageUrl": "",
-    "price": 0,
-    "category": 1
+    "name": "Тромбоасс",
+    "imageUrl": "https://ozerki.ru/upload/iblock/f6f/f6f0db079809d6795713f21aec884fb9.jpg",
+    "price": "55",
+    "category": 1,
+    "Manufacturer": ""
   },
   {
     "id": 3,
-    "name": "",
-    "imageUrl": "",
-    "price": 0,
-    "category": 1
+    "name": "Гексорал",
+    "imageUrl": "https://apteki.me/static/images/product/502/460x460_geksoral-sprej-02-40-ml.jpg",
+    "price": "190",
+    "category": 1,
+    "Manufacturer": ""
   },
   {
     "id": 4,
-    "name": "",
-    "imageUrl": "",
-    "price": 0,
-    "category": 1
+    "name": "Миг",
+    "imageUrl": "https://cdn.eapteka.ru/upload/offer_photo/209/707/1_8c3ce0cd021e316e3bc4779e8e32777f.png?t=1647767014&_cvc=1667815241",
+    "price": "220",
+    "category": 1,
+    "Manufacturer": ""
   },
   {
     "id": 5,
-    "name": "",
-    "imageUrl": "",
-    "price": 0,
-    "category": 1
+    "name": "Тамтум верде",
+    "imageUrl": "https://cdn.rigla.ru/media/catalog/product/cache/1e8ef93b9b4867ab9f3538dde2cb3b8a/1/7/1798-2-9-a-8-29a8a2f59ccb03cb2a83b81367e76f1b10d7afce_1798_1.jpg",
+    "price": "350",
+    "category": 1,
+    "Manufacturer": ""
   },
   {
     "id": 6,
-    "name": "",
-    "imageUrl": "",
-    "price": 0,
-    "category": 1
+    "name": "Ибуклин",
+    "imageUrl": "https://ovita.ru/upload/element/4805992.jpg",
+    "price": "120",
+    "category": 1,
+    "Manufacturer": ""
   },
   {
     "id": 7,
-    "name": "",
-    "imageUrl": "",
-    "price": 0,
-    "category": 1
+    "name": "Мезим",
+    "imageUrl": "https://farmani.ru/upload/iblock/94e/eypyrgb8cor4sh60pj1yut3u6i2sa2k2.jpg",
+    "price": "35",
+    "category": 1,
+    "Manufacturer": ""
   },
   {
     "id": 8,
-    "name": "",
-    "imageUrl": "",
-    "price": 0,
-    "category": 1
+    "name": "Гостал",
+    "imageUrl": "https://cdn.eapteka.ru/upload/offer_photo/103/613/5_6e44f2cbeaed68024b62bee62cd75cf4.png?t=1667375234&_cvc=1667482301",
+    "price": "170",
+    "category": 1,
+    "Manufacturer": ""
   },
   {
     "id": 9,
-    "name": "",
-    "imageUrl": "",
-    "price": 0,
-    "category": 1
+    "name": "Снуп",
+    "imageUrl": "https://apteka245.ru/img/drugs/nnt11132.jpg",
+    "price": "145",
+    "category": 1,
+    "Manufacturer": ""
   },
   {
     "id": 10,
-    "name": "",
-    "imageUrl": "",
-    "price": 0,
-    "category": 1
+    "name": "Спазмалгон",
+    "imageUrl": "https://cdn.eapteka.ru/upload/offer_photo/110/665/2_a7a4b38e136dbabbc43b563d7f62c230.jpeg?t=1629894129&_cvc=1667482301",
+    "price": "90",
+    "category": 1,
+    "Manufacturer": ""
+  },
+  {
+    "id": 11,
+    "name": "Супродин",
+    "imageUrl": "https://pictures1.apteka-april.ru/products/231579/800/d4d752e5c0edcb8d83004312ba9ca4bd.webp",
+    "price": "350",
+    "category": 1,
+    "Manufacturer": ""
   }
 ]

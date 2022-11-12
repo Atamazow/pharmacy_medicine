@@ -6,7 +6,8 @@ const initialState = {
   status: false,
 };
 
-export const fetchMedicine = createAsyncThunk(async () => {
+export const fetchMedicine = createAsyncThunk('fetch/Medicine',async () => {
+
   const { data } = await axios.get(
     "https://6368ce8715219b84960742ec.mockapi.io/medicine"
   );
@@ -22,8 +23,13 @@ export const medicineSlice = createSlice({
         state.medicine = action.payload
     },
   },
+  extraReducers:(builder => {
+    builder.addCase(fetchMedicine.fulfilled,(state,action) => {
+      state.medicine = action.payload
+    })
+  } )
 });
 
-export const {} = medicineSlice.actions;
+export const { getMedicine } = medicineSlice.actions;
 
 export default medicineSlice.reducer;
