@@ -10,11 +10,9 @@ function MedicineBlock(props) {
     dispatch(fetchMedicine());
   }, [dispatch]);
   return (
-
-        <ul >
-          <FullMedicine medicine={medicine} />
-        </ul>
-
+    <ul>
+      <FullMedicine medicine={medicine} />
+    </ul>
   );
 }
 

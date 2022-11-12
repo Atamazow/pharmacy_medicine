@@ -11,7 +11,6 @@ export const fetchMedicine = createAsyncThunk('fetch/Medicine',async () => {
   const { data } = await axios.get(
     "https://6368ce8715219b84960742ec.mockapi.io/medicine"
   );
-  console.log(data)
   return data;
 });
 
