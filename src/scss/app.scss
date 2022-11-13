@@ -17,6 +17,7 @@
       width: 300px;
       background-color: white;
       list-style: none;
+
       margin-top: 20px;
       padding: 20px;
       box-shadow: rgb(0 0 0 / 8%) 0px 3px 16px;
@@ -38,7 +39,6 @@
       .wrapper_medicine_block {
         margin-top: 20px;
         font-size: 19px;
-
       }
       .text {
         color: #ece7e7;
@@ -57,9 +57,17 @@
           border: none;
           background-color: transparent;
           color: white;
+          cursor: pointer;
           font-size: 15px;
+        }
+        .count {
+          color: white;
         }
       }
 
     }
 }
+.cart_icon_wrapper {
+  display: flex;
+}
+

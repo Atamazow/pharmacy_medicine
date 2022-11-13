@@ -11,7 +11,7 @@ function App() {
       <div className="wrapper">
           <Header/>
           <Routes>
-              <Route path='/medicine' element={<Home/>}/>
+              <Route path='/' element={<Home/>}/>
               <Route path="/medicine/:id" element={<OneMedicineBlock />} />
           </Routes>
 

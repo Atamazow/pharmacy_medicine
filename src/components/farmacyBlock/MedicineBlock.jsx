@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchMedicine } from "../../redux/medicineSlice";
+import { fetchMedicine } from "../../redux/slices/medicineSlice";
 import FullMedicine from "../../pages/FullMedicine";
 
 function MedicineBlock(props) {
