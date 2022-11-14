@@ -4,18 +4,18 @@ import { Route, Routes } from "react-router-dom";
 import OneMedicineBlock from "./pages/OneMedicineBlock";
 import Header from "./components/Header";
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
+import Cart from "./pages/Cart/Cart";
 function App() {
   return (
     <>
-
       <div className="wrapper">
-          <Header/>
-          <Routes>
-              <Route path='/' element={<Home/>}/>
-              <Route path="/medicine/:id" element={<OneMedicineBlock />} />
-          </Routes>
-
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/medicine/:id" element={<OneMedicineBlock />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
       </div>
     </>
   );

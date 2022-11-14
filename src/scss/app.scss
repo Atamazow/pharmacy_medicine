@@ -110,3 +110,25 @@ body {
     margin-left: 50px;
   }
 }
+
+.cart_empty {
+  .button--black {
+    background-color: #56ec0b;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 30px;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-top: 30px;
+  }
+  .button--black:hover{
+    background-color: #232323FF
+  }
+  img {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 400px;
+  }
+}

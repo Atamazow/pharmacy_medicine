@@ -1,50 +1,54 @@
 .logoPng {
-    width:100px;
-    margin-right: 40px;
+  width: 100px;
+  margin-right: 40px;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo_title {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .cart {
-    background: green;
-    display: flex;
-    align-items: center;
-    padding: 3px 25px;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: .3s;
+  background: green;
+  display: flex;
+  align-items: center;
+  padding: 3px 25px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart_empty {
+ text-align: center;
 }
 
 .cart:hover {
-    background: #3cdc0f;
-    transition: .3s;
+  background: #3cdc0f;
+  transition: 0.3s;
 }
 
 .cart button {
-    border: none;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .border-right {
-    border-right: 1px solid white;
-    height: 25px;
-    padding-left: 10px;
+  border-right: 1px solid white;
+  height: 25px;
+  padding-left: 10px;
 }
 
 .cart_logo {
-    color: white;
-    margin-left: 10px;
-    fill: white;
-
+  color: white;
+  margin-left: 10px;
+  fill: white;
 }

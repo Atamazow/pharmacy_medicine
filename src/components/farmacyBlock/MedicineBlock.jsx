@@ -10,7 +10,7 @@ function MedicineBlock(props) {
     dispatch(fetchMedicine());
   }, [dispatch]);
   return (
-    <ul className='wrapper_medicine'>
+    <ul className="wrapper_medicine">
       <FullMedicine medicine={medicine} />
     </ul>
   );

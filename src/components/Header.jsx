@@ -18,13 +18,15 @@ function Header(props) {
       </Link>
 
       <Search />
-      <div className="cart">
-        <button> {totalPrice}</button>
-        <div className="border-right"></div>
-        <div className="cart_logo">
-          <Cart_Icon items={items} />
-        </div>
-      </div>
+       <Link to='/cart'>
+           <div className="cart">
+               <button className='total_price'> {totalPrice}</button>
+               <div className="border-right"></div>
+               <div className="cart_logo">
+                   <Cart_Icon items={items} />
+               </div>
+           </div>
+       </Link>
     </div>
   );
 }
