@@ -1,7 +1,7 @@
 .navigation {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 50px;
 }
 
@@ -16,11 +16,11 @@
 
 .navigation li:hover {
     transition: .3s;
-    background-color: #13cbbb;
+    background-color: #0c7e34;
     color: white;
 }
 
-.active {
-    background-color: #13cbbb;
+.actived {
+    background-color: #0c7e34;
     color: white;
 }

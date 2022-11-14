@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 
 function Header(props) {
   const { items, totalPrice } = useSelector((state) => state.cartSlice);
-  console.log(totalPrice);
   return (
     <div className="header">
       <Link to="/">

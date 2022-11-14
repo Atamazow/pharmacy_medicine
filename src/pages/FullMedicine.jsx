@@ -27,6 +27,7 @@ function FullMedicine({ medicine }) {
               ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ ПРОКОНСУЛЬТИРУЙТЕСЬ СО
               СПЕЦИАЛИСТОМ
             </div>
+
             <div onClick={onClickAdd} className="wrapper_cart_medicine_block">
               <button  className="cart_medicine_block">В корзину</button>
               <span className="count"></span>

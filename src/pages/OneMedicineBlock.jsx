@@ -20,12 +20,15 @@ function OneMedicineBlock(props) {
     medicineFetch();
   }, []);
   if (!medicine) {
-    return <div>Загрузка</div>
+    return <div>Загрузка</div>;
   }
   return (
-    <div className="container">
-      <h2>{medicine.name}</h2>
-      <img src={medicine.imageUrl} alt=""/>
+    <div className="wrapper_one_medicine">
+      <img className="image_one_medicine" src={medicine.imageUrl} alt="" />
+      <div className='one_medicine_date'>
+        <h2>{medicine.name}</h2>
+        <p>{medicine.Manufacturer}</p>
+      </div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import OneMedicineBlock from "./pages/OneMedicineBlock";
 import Header from "./components/Header";
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <>

@@ -10,7 +10,7 @@ function Navigation(props) {
             {categories.map((data,i) => (
                 <li key={i}
                     onClick={() => setActiveIndex(i)}
-                    className={activeIndex === i ? 'active' : ''}
+                    className={activeIndex === i ? 'actived' : ''}
                 >
                     {data}
                 </li>
