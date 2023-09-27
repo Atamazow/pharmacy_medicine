@@ -1,0 +1,40 @@
+.wrapper_cart_btn {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.cart {
+  color: #de002b;
+  width: 150px;
+  padding: 10px;
+  border: 2px solid #de002b;
+  border-radius: 5px;
+  background:  inherit;
+  text-align: center;
+  &:hover {
+    background-color: #de002b;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+  }
+
+ }
+
+.wrapper_count {
+  margin-left: 20px;
+  border: 2px solid  #de002b;
+
+
+  button {
+    border: 0;
+    background-color: inherit;
+  }
+  span {
+    margin: 0 30px;
+  }
+}
+.price_text {
+  color: #de002b;
+}

@@ -1,7 +1,7 @@
 import "./scss/app.scss";
 import Home from "./components/Home";
 import { Route, Routes } from "react-router-dom";
-import OneMedicineBlock from "./pages/OneMedicineBlock";
+import OneMedicineBlock from "./pages/OneMedicineBlock/OneMedicineBlock";
 import Header from "./components/Header";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
