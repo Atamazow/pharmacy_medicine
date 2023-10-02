@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {addItems} from '../redux/slices/cartSlice'
-import {useDispatch} from "react-redux";
+import { addItems } from "../redux/slices/cartSlice";
+import { useDispatch, useSelector } from "react-redux";
 
-function FullMedicine({ medicine }) {
-  const dispatch = useDispatch()
+function FullMedicine() {
+  const medicine = useSelector((state) => state.medicineSlice.medicine);
 
+  const dispatch = useDispatch();
   const onClickAdd = () => {
     const cartItem = { medicine };
-    dispatch(addItems(cartItem))
-  }
+    dispatch(addItems(cartItem));
+  };
 
   return (
     <div className="medicine_block">
@@ -29,7 +30,7 @@ function FullMedicine({ medicine }) {
             </div>
 
             <div onClick={onClickAdd} className="wrapper_cart_medicine_block">
-              <button  className="cart_medicine_block">В корзину</button>
+              <button className="cart_medicine_block">В корзину</button>
               <span className="count"></span>
             </div>
           </div>
