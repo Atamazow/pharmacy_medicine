@@ -6,10 +6,10 @@ const initialState = {
   status: false,
 };
 
-export const fetchMedicine = createAsyncThunk('fetch/Medicine',async (categoryId,search) => {
-  console.log(categoryId)
+export const fetchMedicine = createAsyncThunk('fetch/Medicine',async (params) => {
+  const {category, search} = params
   const { data } = await axios.get(
-    `https://6368ce8715219b84960742ec.mockapi.io/medicine?${categoryId}${search}`
+    `https://6368ce8715219b84960742ec.mockapi.io/medicine?${category}${search}`
   );
   return data;
 });

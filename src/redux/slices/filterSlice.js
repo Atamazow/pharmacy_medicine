@@ -11,10 +11,13 @@ const filterSlice = createSlice({
     reducers: {
         setCategoryId(state,action) {
              state.categoryId = action.payload
+        },
+        setSearchValue(state,action) {
+            state.searchValue = action.payload
         }
     }
 })
 
-export const {setCategoryId} = filterSlice.actions
+export const {setCategoryId, setSearchValue} = filterSlice.actions
 
 export default filterSlice.reducer

@@ -1,13 +1,12 @@
-import React from 'react';
-import Carousel from "../Carusel/UncontrolledExample";
+import React from "react";
 import UncontrolledExample from "../Carusel/UncontrolledExample";
 
 function Recommended(props) {
-    return (
-        <div>
-            <UncontrolledExample/>
-        </div>
-    );
+  return (
+    <div>
+      <UncontrolledExample />
+    </div>
+  );
 }
 
 export default Recommended;
