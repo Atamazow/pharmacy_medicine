@@ -8,16 +8,17 @@ import {fetchMedicine} from "../redux/slices/medicineSlice";
 
 function Home(props) {
     const categoryId = useSelector(state =>  state.filterSlice.categoryId)
+    const searchValue = useSelector(state => state.filterSlice.searchValue)
       const dispatch = useDispatch()
     const onChangeCategory = (id) => {
         dispatch(setCategoryId(id))
     }
     const getFarmacy = () => {
         const category = categoryId > 0 ? `categoryId=${categoryId}` : ""
-         dispatch(fetchMedicine(category))
+        const search = searchValue ? `&search=${searchValue}` : ''
+         dispatch(fetchMedicine(category,search))
     }
 
-    console.log(getFarmacy())
 
     useEffect(() => {
         getFarmacy()
