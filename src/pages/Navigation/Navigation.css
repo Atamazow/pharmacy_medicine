@@ -16,11 +16,11 @@
 
 .navigation li:hover {
     transition: .3s;
-    background-color: #0c7e34;
+    background-color:  #8A2BE2;
     color: white;
 }
 
 .actived {
-    background-color: #0c7e34;
+    background-color: #991199;
     color: white;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import Logo from "../assets/image/Logo.png";
+import Logo from "../assets/image/log.png";
 import Search from "../pages/search/Search";
 import Cart_Icon from "../assets/icon/Cart_Icon";
 import { Link } from "react-router-dom";
