@@ -5,8 +5,7 @@ import style from "./Cart.module.scss";
 
 function Cart(props) {
   const { items, totalPrice } = useSelector((state) => state.cartSlice);
-  console.log(items);
-  if (items >= 0) {
+   if (items >= 0) {
     return <CartEmpty />;
   }
   return (
@@ -17,7 +16,7 @@ function Cart(props) {
         <div></div>
         <button></button>
       </div>
-      <div> {totalPrice}</div>
+      <div>  {totalPrice}</div>
       <div>
         <div>
           <button></button>
@@ -25,13 +24,13 @@ function Cart(props) {
         <div className={style.order}>
           <h2 className={style.title}>Ваш заказ</h2>
           <div className={style.price__general}>
-            <div>Cумма заказа</div>
+            <div>Cумма заказа: {totalPrice}</div>
             <div>руб</div>
           </div>
 
           <div className={style.order_btn}>
             <button>Оформить заказ</button>
-          </div>
+           </div>
         </div>
       </div>
     </div>

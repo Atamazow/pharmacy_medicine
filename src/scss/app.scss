@@ -15,10 +15,6 @@ body {
 }
 
 .medicine_block {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
   .medicine_block_list {
     width: 290px;
     background-color: white;
@@ -88,6 +84,9 @@ body {
 }
 
 .wrapper_medicine {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
