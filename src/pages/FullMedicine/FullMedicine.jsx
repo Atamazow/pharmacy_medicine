@@ -12,8 +12,7 @@ function FullMedicine({ id, imageUrl, name, price }) {
       name,
       price
     }
-    console.log(id,name,imageUrl,price)
-    dispatch(
+     dispatch(
       addItems(obj)
     );
   };
