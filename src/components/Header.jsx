@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 
 function Header(props) {
   const { items, totalPrice } = useSelector((state) => state.cartSlice);
+  const totalCount = items.reduce((sum, item) => item.count + sum,0)
   return (
     <div className="header">
       <Link to="/">
@@ -23,7 +24,7 @@ function Header(props) {
                <span className='total_price'> {totalPrice}</span>
                <div className="border-right"></div>
                <div className="cart_logo">
-                   <Cart_Icon items={items} />
+                   <Cart_Icon totalCount={totalCount} items={items} />
                </div>
            </div>
        </Link>

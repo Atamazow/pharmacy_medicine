@@ -1,7 +1,7 @@
 import React from "react";
 import "../../components/style.css";
 
-function CartIcon({items}) {
+function CartIcon({items,totalCount}) {
   return (
    <div className='cart_icon_wrapper'>
 
@@ -26,7 +26,7 @@ function CartIcon({items}) {
        <g />
      </svg>
      <div>
-       <span className='cart_count_items'>{items.length}</span>
+       <span className='cart_count_items'>{totalCount}</span>
      </div>
    </div>
 
