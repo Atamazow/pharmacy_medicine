@@ -19,8 +19,8 @@ function Header(props) {
 
       <Search />
        <Link to='/cart'>
-           <div className="cart">
-               <button className='total_price'> {totalPrice}</button>
+           <div className="cart_btn">
+               <span className='total_price'> {totalPrice}</span>
                <div className="border-right"></div>
                <div className="cart_logo">
                    <Cart_Icon items={items} />

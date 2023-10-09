@@ -26,7 +26,7 @@ function CartIcon({items}) {
        <g />
      </svg>
      <div>
-       <span>{items.length}</span>
+       <span className='cart_count_items'>{items.length}</span>
      </div>
    </div>
 
