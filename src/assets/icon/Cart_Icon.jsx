@@ -18,12 +18,7 @@ function CartIcon({items,totalCount}) {
          <circle cx="48.099" cy="50.323" r="4.415" />
          <path d="M53.4,39.004H27.579L17.242,9.261H9.193c-1.381,0-2.5,1.119-2.5,2.5s1.119,2.5,2.5,2.5h4.493l10.337,29.743H53.4   c1.381,0,2.5-1.119,2.5-2.5S54.781,39.004,53.4,39.004z" />
        </g>
-       <g />
-       <g />
-       <g />
-       <g />
-       <g />
-       <g />
+      
      </svg>
      <div>
        <span className='cart_count_items'>{totalCount}</span>

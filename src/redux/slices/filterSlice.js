@@ -2,7 +2,8 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     searchValue: '',
-    categoryId: 0
+    categoryId: 0,
+    isModal: false
 }
 
 const filterSlice = createSlice({
@@ -14,10 +15,10 @@ const filterSlice = createSlice({
         },
         setSearchValue(state,action) {
             state.searchValue = action.payload
-        }
+        } 
     }
 })
 
-export const {setCategoryId, setSearchValue} = filterSlice.actions
+export const {setCategoryId, setSearchValue } = filterSlice.actions
 
 export default filterSlice.reducer

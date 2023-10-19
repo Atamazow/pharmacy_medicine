@@ -2,10 +2,13 @@ import React, { useCallback, useRef, useState } from "react";
 import debounce from "lodash.debounce";
 import style from "./Search.module.scss";
 import { setSearchValue } from "../../redux/slices/filterSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import  Modal  from "../ModalOkno/Modal";
 
 function Search(props) {
+  const modal = useSelector(state => state.filterSlice.isModal)
   const [value, setValue] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const inputRef = useRef();
   const dispatch = useDispatch();
   const updateSearchValue = useCallback(
@@ -23,6 +26,15 @@ function Search(props) {
     setValue("");
     inputRef.current.focus();
   };
+
+  const openModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
+
   return (
     <div className={style.root}>
       <svg
@@ -36,6 +48,7 @@ function Search(props) {
         </g>
       </svg>
       <input
+        onClick={openModal}
         ref={inputRef}
         value={value}
         onChange={onChangeInput}
@@ -43,6 +56,7 @@ function Search(props) {
         placeholder="Поиск пицц ..."
         type="text"
       />
+      <Modal isOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
       {value && (
         <svg
           onClick={onClickClear}

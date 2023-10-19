@@ -5,7 +5,7 @@ import Search from "../pages/search/Search";
 import Cart_Icon from "../assets/icon/Cart_Icon";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-
+ 
 function Header(props) {
   const { items, totalPrice } = useSelector((state) => state.cartSlice);
   const totalCount = items.reduce((sum, item) => item.count + sum,0)
@@ -19,7 +19,7 @@ function Header(props) {
       </Link>
 
       <Search />
-       <Link to='/cart'>
+        <Link to='/cart'>
            <div className="cart_btn">
                <span className='total_price'> {totalPrice}</span>
                <div className="border-right"></div>
