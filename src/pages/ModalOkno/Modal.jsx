@@ -6,7 +6,7 @@ function Modal({ isOpen, closeModal }) {
   if (!isOpen) return null;
   const close = (event) => {
     if (event.target === event.currentTarget) {
-      closeModal();
+      closeModal(!isOpen);
     }
   };
 

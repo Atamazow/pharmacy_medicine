@@ -56,7 +56,7 @@ function Search(props) {
         placeholder="Поиск пицц ..."
         type="text"
       />
-      <Modal isOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
+      <Modal isOpen={isModalOpen} closeModal={closeModal}/>
       {value && (
         <svg
           onClick={onClickClear}
