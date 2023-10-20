@@ -2,7 +2,6 @@ import style from './Modal.module.scss';
 import { useEffect } from 'react';
 
 function Modal({ isOpen, closeModal }) {
-  console.log(isOpen);
   if (isOpen) {
     document.body.style.overflow = 'hidden';
   } else if (!isOpen) {
