@@ -1,21 +1,21 @@
-import React, { useCallback, useRef, useState } from "react";
-import debounce from "lodash.debounce";
-import style from "./Search.module.scss";
-import { setSearchValue } from "../../redux/slices/filterSlice";
-import { useDispatch, useSelector } from "react-redux";
-import  Modal  from "../ModalOkno/Modal";
+import React, { useCallback, useRef, useState } from 'react';
+import debounce from 'lodash.debounce';
+import style from './Search.module.scss';
+import { setSearchValue } from '../../redux/slices/filterSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import Modal from '../ModalOkno/Modal';
 
 function Search(props) {
-  const modal = useSelector(state => state.filterSlice.isModal)
-  const [value, setValue] = useState("");
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const modal = useSelector((state) => state.filterSlice.isModal);
+  const [value, setValue] = useState('');
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const inputRef = useRef();
   const dispatch = useDispatch();
   const updateSearchValue = useCallback(
     debounce((str) => {
-       dispatch(setSearchValue(str));
+      dispatch(setSearchValue(str));
     }, 1000),
-    []
+    [],
   );
 
   const onChangeInput = (event) => {
@@ -23,17 +23,17 @@ function Search(props) {
     updateSearchValue(event.target.value);
   };
   const onClickClear = () => {
-    setValue("");
+    setValue('');
     inputRef.current.focus();
   };
 
   const openModal = () => {
-    setIsModalOpen(true)
-  }
+    setIsModalOpen(true);
+  };
 
   const closeModal = () => {
-    setIsModalOpen(false)
-  }
+    setIsModalOpen(false);
+  };
 
   return (
     <div className={style.root}>
@@ -53,10 +53,10 @@ function Search(props) {
         value={value}
         onChange={onChangeInput}
         className={style.input}
-        placeholder="Поиск пицц ..."
+        placeholder="Поиск лекарств..."
         type="text"
       />
-      <Modal isOpen={isModalOpen} closeModal={closeModal}/>
+      <Modal isOpen={isModalOpen} closeModal={closeModal} />
       {value && (
         <svg
           onClick={onClickClear}

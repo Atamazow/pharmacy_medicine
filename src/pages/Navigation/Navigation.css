@@ -1,26 +1,26 @@
 .navigation {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    margin-top: 50px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .navigation li {
-    margin-left: 20px;
-    font-size: 20px;
-    padding: 15px;
-    cursor: pointer;
-    transition: .3s;
-    border-radius: 25px;
+  margin-left: 20px;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 25px;
 }
 
 .navigation li:hover {
-    transition: .3s;
-    background-color:  #8A2BE2;
-    color: white;
+  transition: 0.3s;
+  background-color: #8a2be2;
+  color: white;
 }
 
 .actived {
-    background-color: #991199;
-    color: white;
+  background-color: #991199;
+  color: white;
 }

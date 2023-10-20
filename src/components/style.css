@@ -1,7 +1,7 @@
 .logoPng {
   width: 100px;
   margin-right: 40px;
- }
+}
 
 .header {
   margin-top: 30px;
@@ -15,7 +15,7 @@
 }
 
 .cart_btn {
-  background: #8A2BE2;
+  background: #8a2be2;
   display: flex;
   align-items: center;
   padding: 3px 25px;
@@ -25,10 +25,8 @@
 }
 
 .cart_empty {
- text-align: center;
+  text-align: center;
 }
-
-
 
 .cart button {
   border: none;

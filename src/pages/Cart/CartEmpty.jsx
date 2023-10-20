@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Cart_empty from "../../assets/image/Cart_empty.png";
-import style from "./Cart.module.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Cart_empty from '../../assets/image/Cart_empty.png';
+import style from './Cart.module.scss';
 const CartEmpty = (props) => {
   return (
     <div className={style.cart_empty}>

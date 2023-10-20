@@ -1,8 +1,13 @@
-import { useState } from "react";
-import style from "./Modal.module.scss";
-import { useDispatch, useSelector } from "react-redux";
+import style from './Modal.module.scss';
+import { useEffect } from 'react';
 
 function Modal({ isOpen, closeModal }) {
+  console.log(isOpen);
+  if (isOpen) {
+    document.body.style.overflow = 'hidden';
+  } else if (!isOpen) {
+    document.body.style.overflow = 'scroll';
+  }
   if (!isOpen) return null;
   const close = (event) => {
     if (event.target === event.currentTarget) {
@@ -10,14 +15,14 @@ function Modal({ isOpen, closeModal }) {
     }
   };
 
-  const recommendations = ["Карвалол", "Парацитамол", "Анальгин", "Трамал"];
+  const recommendations = ['Карвалол', 'Парацитамол', 'Анальгин', 'Трамал'];
   return (
     <div className={style.modal_backdrop} onClick={close}>
       <div className={style.modal_content}>
         <h6 className={style.Searches_often}>Часто ищут</h6>
         <ul>
           {recommendations.map((item, i) => (
-            <li key={i}  className={style.list_reccomented}>
+            <li key={i} className={style.list_reccomented}>
               <svg
                 className={style.icon}
                 viewBox="0 0 32 32"

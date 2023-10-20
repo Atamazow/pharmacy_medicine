@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { addItems } from "../../redux/slices/cartSlice";
-import { useDispatch } from "react-redux";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { addItems } from '../../redux/slices/cartSlice';
+import { useDispatch } from 'react-redux';
 
 function FullMedicine({ id, imageUrl, name, price }) {
   const dispatch = useDispatch();
@@ -10,11 +10,9 @@ function FullMedicine({ id, imageUrl, name, price }) {
       id,
       imageUrl,
       name,
-      price
-    }
-     dispatch(
-      addItems(obj)
-    );
+      price,
+    };
+    dispatch(addItems(obj));
   };
 
   return (
@@ -33,10 +31,7 @@ function FullMedicine({ id, imageUrl, name, price }) {
             СПЕЦИАЛИСТОМ
           </div>
 
-          <div
-            onClick={onClickAdd}
-            className="wrapper_cart_medicine_block"
-          >
+          <div onClick={onClickAdd} className="wrapper_cart_medicine_block">
             <button className="cart_medicine_block">В корзину</button>
             <span className="count"></span>
           </div>
