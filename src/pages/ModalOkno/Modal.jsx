@@ -1,5 +1,5 @@
 import style from './Modal.module.scss';
-import { useEffect } from 'react';
+import ReactDOM from 'react-dom';
 
 function Modal({ isOpen, closeModal }) {
   if (isOpen) {
@@ -15,7 +15,7 @@ function Modal({ isOpen, closeModal }) {
   };
 
   const recommendations = ['Карвалол', 'Парацитамол', 'Анальгин', 'Трамал'];
-  return (
+  return ReactDOM.createPortal(
     <div className={style.modal_backdrop} onClick={close}>
       <div className={style.modal_content}>
         <h6 className={style.Searches_often}>Часто ищут</h6>
@@ -37,7 +37,8 @@ function Modal({ isOpen, closeModal }) {
           ))}
         </ul>
       </div>
-    </div>
+    </div>,
+    document.getElementById('modal-root'),
   );
 }
 
